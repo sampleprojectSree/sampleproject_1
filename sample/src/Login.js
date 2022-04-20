@@ -11,14 +11,24 @@ import OutlinedInput from '@mui/material/OutlinedInput';
         const {username,password} = data;
         // we will do destucturing the variables to store the values in above line .
     
-        const changeHandler = e=>{
+        const changeHandler = e =>{
             setData({...data,[e.target.name]:[e.target.value]})
            
         }
-        const submitHandler = e=>{
-            e.preventDefault()
-            console.log(data);
-   
+
+        const submitHandler = e =>{
+
+            if(data.username=="admin") {
+                if(data.password=="admin@123") {
+                    alert("Login Success!")
+                }
+                else {
+                    alert("Incorrect Credential data!")
+                }
+            }
+            else {
+                alert("No user found")
+            }
              
         }
 return (
