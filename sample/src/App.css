@@ -7,9 +7,19 @@ body{
   border: 1px solid green;
   border-radius: 10px;
   margin: 100px 500px;
+  
 }
 
 .MuiInputBase-input-MuiOutlinedInput-input{
   background-color: white;
   margin: 15px 0px;
+  height: 45px;
+  border-radius: 10px;
+}
+.submit-btn{
+  padding:  10px 15px;
+  background-color: black;
+  color: white;
+  border: 1px solid black;
+  border-radius: 7px;
 }

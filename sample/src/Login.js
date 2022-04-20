@@ -30,12 +30,13 @@ return (
             <div style={{ alignItems:"center"}} className='login-input'>
                 <div style={{textAlign:"center"}}>
                     <form onSubmit={submitHandler}>  
-                        <OutlinedInput type='username' name='username' className='MuiInputBase-input-MuiOutlinedInput-input' value={username} onChange={changeHandler} placeholder="Username" />
-                        <OutlinedInput type='password' name='password' className='MuiInputBase-input-MuiOutlinedInput-input' value={password} onChange={changeHandler} placeholder="Password" />
-                        <br/>  
-                        <Button style={{marginTop:15,marginBottom:15}} type="submit" variant="contained" color="success">
+                        <OutlinedInput type='username' name='username' className='MuiInputBase-input-MuiOutlinedInput-input' value={username} onChange={changeHandler} placeholder="Username" required />
+                        <OutlinedInput type='password' name='password' className='MuiInputBase-input-MuiOutlinedInput-input' value={password} onChange={changeHandler} placeholder="Password"  required/>
+                        <br/>    
+                        {/* <Button style={{marginTop:15,marginBottom:15}} type="submit" variant="contained" color="success">
                             Login
-                        </Button>
+                        </Button> */}
+                        <input className='submit-btn' type='submit' name='submit'/>
                     </form>
                 </div>
             </div>
