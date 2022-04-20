@@ -12,4 +12,5 @@ body{
 .MuiInputBase-input-MuiOutlinedInput-input{
   background-color: white;
   margin: 15px 0px;
+  height: 45px;
 }
