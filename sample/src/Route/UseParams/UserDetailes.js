@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom/cjs/react-router-dom.min";
+import { useParams, Link } from "react-router-dom";
 
 function UserDetailes() {
   const { id } = useParams();
@@ -16,6 +16,7 @@ function UserDetailes() {
 
   return (
     <div className="container">
+      <Link to={"/"}>Get Back</Link>
       <h1>UserDetailes</h1>
       <h2>
         {" "}

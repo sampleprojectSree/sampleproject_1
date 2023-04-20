@@ -37,13 +37,9 @@ function Users() {
             );
           })}
         </div>
+
         <hr />
       </div>
-      {/* <Router>
-        <Switch>
-          <Route path={`/UserDetailes/:id`}></Route>
-        </Switch>
-      </Router> */}
     </>
   );
 }
