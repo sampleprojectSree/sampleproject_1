@@ -1,0 +1,27 @@
+.Signin,
+.Home,
+.root{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    flex-direction: column;
+}
+
+.LockIcon {
+    background-color: blueviolet;
+    color: white;
+    padding: 10px 10px;
+    border-radius: 50%;
+}
+
+.Username,
+.Password {
+    width: 350px;
+}
+
+.Login {
+    width: 100px;
+    height: 40px;
+}
