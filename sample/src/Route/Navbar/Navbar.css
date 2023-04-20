@@ -1,0 +1,44 @@
+ul{
+  display: flex;
+  list-style-type: none;
+  padding: 3px ;
+  text-align: center;
+  justify-content: center;
+  align-items: center; 
+}
+ul li{
+  padding: 5px 35px 5px 35px;
+ 
+}
+
+/* ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    text-decoration: none;
+    padding: 15px 20px;
+    border-radius: 10px;
+    background-color: chartreuse;
+    font-weight: 700;
+    color: darkblue;
+  }
+ 
+  
+  ul {
+    list-style-type: none;
+    text-decoration: none;
+    
+    padding: 15px 20px;
+    border-radius: 10px;
+    background-color: chartreuse;
+    font-weight: 700;
+    color: darkblue;
+  }
+  .Nav-bar{
+    background-color:cyan;
+    padding: 5px;
+  }
+  ul li:hover{
+    background-color: darkgreen;
+    color: white;
+  } */

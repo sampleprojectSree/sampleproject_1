@@ -1,0 +1,32 @@
+.Box-Border{
+    border: 1px solid red;
+}
+.card{
+    background-color: aquamarine;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.Main{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+button{
+    padding: 5px;
+    margin: 5px;
+}
+.card-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    
+}
+@media screen and (min-width:992px) {
+    .card-container{
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1rem;
+       
+    }
+    
+}
