@@ -1,16 +1,24 @@
-ul{
+.nav-link{
   display: flex;
   list-style-type: none;
   padding: 3px ;
   text-align: center;
   justify-content: center;
   align-items: center; 
+  background-color: aqua;
+  
 }
-ul li{
-  padding: 5px 35px 5px 35px;
- 
+a:-webkit-any-link{
+  color: green;
+  text-decoration: none;
+  padding-right: 50px;
+  font-size: medium;
 }
 
+.nav-link .active{
+  color: blue;
+  font-weight: bold;
+}
 /* ul {
     display: flex;
     justify-content: space-around;
