@@ -11,14 +11,24 @@ import OutlinedInput from '@mui/material/OutlinedInput';
         const {username,password} = data;
         // we will do destucturing the variables to store the values in above line .
     
-        const changeHandler = e=>{
+        const changeHandler = e =>{
             setData({...data,[e.target.name]:[e.target.value]})
            
         }
-        const submitHandler = e=>{
-            e.preventDefault()
-            console.log(data);
-   
+
+        const submitHandler = e =>{
+
+            if(data.username=="admin") {
+                if(data.password=="admin@123") {
+                    alert("Login Success!")
+                }
+                else {
+                    alert("Incorrect Credential data!")
+                }
+            }
+            else {
+                alert("No user found")
+            }
              
         }
 return (
@@ -30,10 +40,10 @@ return (
             <div style={{ alignItems:"center"}} className='login-input'>
                 <div style={{textAlign:"center"}}>
                     <form onSubmit={submitHandler}>  
-                        <OutlinedInput type='username' name='username' className='MuiInputBase-input-MuiOutlinedInput-input' value={username} onChange={changeHandler} placeholder="Username" required />
-                        <OutlinedInput type='password' name='password' className='MuiInputBase-input-MuiOutlinedInput-input' value={password} onChange={changeHandler} placeholder="Password"  required/>
-                        <br/>    
-                        {/* <Button style={{marginTop:15,marginBottom:15}} type="submit" variant="contained" color="success">
+                        <OutlinedInput type='username' name='username' className='MuiInputBase-input-MuiOutlinedInput-input' value={username} onChange={changeHandler} placeholder="Username" />
+                        <OutlinedInput type='password' name='password' className='MuiInputBase-input-MuiOutlinedInput-input' value={password} onChange={changeHandler} placeholder="Password" />
+                        <br/>  
+                        <Button style={{marginTop:15,marginBottom:15}} type="submit" variant="contained" color="success">
                             Login
                         </Button> */}
                         <input className='submit-btn' type='submit' name='submit'/>
