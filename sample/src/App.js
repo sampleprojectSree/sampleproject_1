@@ -26,7 +26,7 @@ function App() {
       {/* {component} */}
       {/* <Raju />{" "} */}
       {/* <Basic /> */}
-      <Navbar />
+      {/* <Navbar /> */}
       {/* <Users/> */}
     </div>
   );
